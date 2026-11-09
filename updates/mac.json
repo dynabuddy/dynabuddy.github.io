@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "build": 10,
+  "url": "https://github.com/dynabuddy/dynabuddy.github.io/releases/download/v1.0.0/DynaBuddy-1.0.0-mac.zip",
+  "size": 9874135,
+  "sha256": "3cd8473ad9244574c7586ce982caba12adee9a18d46678977e759ef53a375180",
+  "signature": "MEUCIQCevzCF3xwL4qjMzDkoj4kPh7lA6ZKYJxGOgAcsKxUD7gIgJv8eznJ93lX52yo8gyG/Ucl3BdbMrAbiMVA6u85LbgE=",
+  "minimumSystem": "26.0",
+  "notes": "\u2022 DynaBuddy for Windows 10 and 11: the island, the face and rubber-hose arms, all 13 looks, Files, Notes, Chat, Music and Capture. Clipper, Transcribe and Cleaner come to Windows next.\n\u2022 A first-run setup on both: meet your buddy, connect the AI you already use, pick a look, and choose folders.\n\u2022 Automatic updates from dynabuddy.github.io; Mac updates are checked against DynaBuddy's own signing key before they install.\n\u2022 Installers: a disk image for Mac and Setup.exe for Windows.",
+  "date": "2026-11-09",
+  "page": "https://dynabuddy.github.io/#v1.0.0"
+}

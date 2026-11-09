@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DynaBuddy</title>
+  <meta name="description" content="A little character that lives at the top of your screen, with a toolbox for files, notes, AI chat, music and screenshots. Free for Mac and Windows.">
+  <meta property="og:title" content="DynaBuddy">
+  <meta property="og:description" content="A little buddy for the top of your screen. Free for Mac and Windows.">
+  <meta property="og:image" content="https://dynabuddy.github.io/img/looks/mochi.png">
+  <meta name="theme-color" content="#16132e">
+  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- The page's top edge is a screen's top edge, and the buddy hangs from it. -->
+  <div class="island-dock" aria-hidden="false">
+    <button class="island" id="island" aria-expanded="false" aria-label="DynaBuddy. Click to open, or poke it a few times.">
+      <canvas id="face" width="300" height="80"></canvas>
+      <span class="island-menu" id="island-menu">
+        <a href="#download">Download</a>
+        <a href="#tools">Tools</a>
+        <a href="#looks">Looks</a>
+        <a href="#install">Install help</a>
+        <a href="#updates">What's new</a>
+      </span>
+    </button>
+    <p class="island-speech" id="speech" role="status" aria-live="polite"></p>
+  </div>
+
+  <header class="hero">
+    <p class="kicker">Free for Mac and Windows</p>
+    <h1>A little buddy for the top of&nbsp;your&nbsp;screen.</h1>
+    <p class="lede">DynaBuddy turns the space where a notch would be into a character with glowing eyes and rubber-hose arms. It watches your cursor, reacts when you poke it, and opens into a toolbox: convert files, keep notes, ask your AI, see what's playing, grab the screen.</p>
+    <div class="cta" id="download">
+      <a class="button primary" id="dl-primary" href="https://github.com/dynabuddy/dynabuddy.github.io/releases/latest/download/DynaBuddy-mac.dmg">
+        <span class="button-title" id="dl-primary-title">Download for Mac</span>
+        <span class="button-note" id="dl-primary-note">macOS 26 or later · Apple silicon and Intel</span>
+      </a>
+      <a class="button" id="dl-secondary" href="https://github.com/dynabuddy/dynabuddy.github.io/releases/latest/download/DynaBuddy-win-Setup.exe">
+        <span class="button-title" id="dl-secondary-title">Download for Windows</span>
+        <span class="button-note" id="dl-secondary-note">Windows 10 or 11 · 64-bit</span>
+      </a>
+    </div>
+    <p class="version"><span class="mono" id="version">Latest version</span> · <a href="#install">First time opening it?</a> · <a href="https://github.com/dynabuddy/dynabuddy.github.io/releases">All releases</a></p>
+  </header>
+
+  <main>
+    <section class="tools" id="tools" aria-labelledby="tools-title">
+      <h2 id="tools-title">Click it, and it opens into a toolbox</h2>
+      <p class="section-lede">Each tool starts from the island in a drop or a click. Everything stays on your computer as plain files.</p>
+      <ul class="tool-list">
+        <li>
+          <h3>Files</h3>
+          <p>Drop files on the island. Convert images, audio, video and documents, zip and unzip, and merge, split or rotate PDF pages.</p>
+          <p class="where"><span class="on">Mac</span><span class="on">Windows</span></p>
+        </li>
+        <li>
+          <h3>Notes</h3>
+          <p>A Markdown vault with links, tags, daily notes and quick capture. Point it at an Obsidian vault and it just works.</p>
+          <p class="where"><span class="on">Mac</span><span class="on">Windows</span></p>
+        </li>
+        <li>
+          <h3>Chat</h3>
+          <p>Talk to Claude Code, Codex, Gemini, OpenCode, Ollama or your own API keys. When one runs out of usage, the next takes over.</p>
+          <p class="where"><span class="on">Mac</span><span class="on">Windows</span></p>
+        </li>
+        <li>
+          <h3>Music</h3>
+          <p>See and control what's playing in Spotify, Apple Music, YouTube Music and the rest. The buddy dances when a song starts.</p>
+          <p class="where"><span class="on">Mac</span><span class="on">Windows</span></p>
+        </li>
+        <li>
+          <h3>Capture</h3>
+          <p>Screenshots with markup and screen recordings with click zooms on Mac; Snipping Tool and full-screen grabs on Windows.</p>
+          <p class="where"><span class="on">Mac</span><span class="on">Windows</span></p>
+        </li>
+        <li>
+          <h3>Clipper</h3>
+          <p>Save the page you're reading, or a YouTube video with its transcript, as a clean note.</p>
+          <p class="where"><span class="on">Mac</span><span>Windows soon</span></p>
+        </li>
+        <li>
+          <h3>Transcribe</h3>
+          <p>Live captions and transcripts of audio and video files, made on your device.</p>
+          <p class="where"><span class="on">Mac</span><span>Windows soon</span></p>
+        </li>
+        <li>
+          <h3>Cleaner</h3>
+          <p>Tidy the desktop, clear caches and old downloads, remove apps with their leftovers, and lock the keyboard while you wipe it.</p>
+          <p class="where"><span class="on">Mac</span><span>Windows soon</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="looks" id="looks" aria-labelledby="looks-title">
+      <h2 id="looks-title">Make it yours</h2>
+      <p class="section-lede">Thirteen looks to start from, then any color, nine materials, four kinds of eyes, a mouth if you want one, and a name. These are the real thing, drawn by the app.</p>
+      <ul class="look-grid" id="look-grid">
+        <li><img src="img/looks/dyna.png" alt="Dyna: a black pill with glowing cyan eyes" loading="lazy"><span>Dyna</span><small>Midnight</small></li>
+        <li><img src="img/looks/mochi.png" alt="Mochi: pink fur with cartoon eyes and a smile" loading="lazy"><span>Mochi</span><small>Plush</small></li>
+        <li><img src="img/looks/nova.png" alt="Nova: a teal neon outline with pink round eyes" loading="lazy"><span>Nova</span><small>Neon</small></li>
+        <li><img src="img/looks/biscuit.png" alt="Biscuit: orange felt with stitching and cream eyes" loading="lazy"><span>Biscuit</span><small>Felt</small></li>
+        <li><img src="img/looks/juno.png" alt="Juno: brushed silver metal with amber round eyes" loading="lazy"><span>Juno</span><small>Brushed metal</small></li>
+        <li><img src="img/looks/kiwi.png" alt="Kiwi: lime jelly with white pixel eyes" loading="lazy"><span>Kiwi</span><small>Jelly</small></li>
+        <li><img src="img/looks/echo.png" alt="Echo: a pearly holographic pill with white eyes" loading="lazy"><span>Echo</span><small>Holographic</small></li>
+        <li><img src="img/looks/toffee.png" alt="Toffee: orange felt with brown cartoon eyes" loading="lazy"><span>Toffee</span><small>Felt</small></li>
+        <li><img src="img/looks/pip.png" alt="Pip: clear glass with magenta pixel eyes" loading="lazy"><span>Pip</span><small>Liquid glass</small></li>
+        <li><img src="img/looks/mint.png" alt="Mint: teal neon with mint eyes" loading="lazy"><span>Mint</span><small>Neon</small></li>
+        <li><img src="img/looks/ziggy.png" alt="Ziggy: a black pill with yellow cartoon eyes" loading="lazy"><span>Ziggy</span><small>Midnight</small></li>
+        <li><img src="img/looks/pearl.png" alt="Pearl: holographic with round white eyes" loading="lazy"><span>Pearl</span><small>Holographic</small></li>
+        <li><img src="img/looks/frost.png" alt="Frost: frosted glass with cyan eyes" loading="lazy"><span>Frost</span><small>Frosted</small></li>
+      </ul>
+    </section>
+
+    <section class="install" id="install" aria-labelledby="install-title">
+      <h2 id="install-title">Opening it the first time</h2>
+      <p class="section-lede">DynaBuddy is free and made without paid developer certificates, so your computer asks once whether you trust it. After that it opens like any app and updates itself.</p>
+      <div class="install-cols">
+        <div class="install-card">
+          <h3>Mac</h3>
+          <ol>
+            <li>Open <span class="mono">DynaBuddy-mac.dmg</span> and drag DynaBuddy into Applications.</li>
+            <li>Double-click DynaBuddy in Applications. macOS says it can't check it; click <b>Done</b>.</li>
+            <li>Open <b>System Settings → Privacy &amp; Security</b>, scroll down and click <b>Open Anyway</b> next to DynaBuddy.</li>
+            <li>Click <b>Open Anyway</b> again and enter your password. A short setup starts.</li>
+          </ol>
+          <p class="note">It lives in the menu bar (the eyes icon) with no Dock icon.</p>
+        </div>
+        <div class="install-card">
+          <h3>Windows</h3>
+          <ol>
+            <li>Run <span class="mono">DynaBuddy-win-Setup.exe</span>.</li>
+            <li>If Windows shows "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>.</li>
+            <li>Setup installs it for you (no admin needed) and opens it. A short setup starts.</li>
+          </ol>
+          <p class="note">It lives in the tray (bottom right). Right-click the island or the tray icon for Settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="updates" id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">What's new</h2>
+      <p class="section-lede">Installed copies check this site once a day and update themselves. Every update is checked against DynaBuddy's own signing key before it installs.</p>
+      <div id="changelog" class="changelog"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>DynaBuddy keeps your notes, files and settings on your own computer. There's no account and no DynaBuddy server: the AI runs through the apps and keys you already use, and the only thing it asks the internet on its own is the daily update check here.</p>
+    <p class="fine"><a href="https://github.com/dynabuddy">github.com/dynabuddy</a> · <a href="https://github.com/dynabuddy/dynabuddy.github.io/releases">Releases</a> · <a href="updates/mac.json" class="mono">updates/mac.json</a></p>
+  </footer>
+
+  <script src="island.js"></script>
+  <script src="site.js"></script>
+</body>
+</html>

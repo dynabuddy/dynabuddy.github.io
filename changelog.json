@@ -1,0 +1,18 @@
+[
+  {
+    "version": "1.0.0",
+    "notes": [
+      "DynaBuddy for Windows 10 and 11: the island, the face and rubber-hose arms, all 13 looks, Files, Notes, Chat, Music and Capture. Clipper, Transcribe and Cleaner come to Windows next.",
+      "A first-run setup on both: meet your buddy, connect the AI you already use, pick a look, and choose folders.",
+      "Automatic updates from dynabuddy.github.io; Mac updates are checked against DynaBuddy's own signing key before they install.",
+      "Installers: a disk image for Mac and Setup.exe for Windows."
+    ]
+  },
+  {
+    "version": "0.9.0",
+    "notes": [
+      "Files, Notes, Chat with provider failover, Capture, Clipper, Music, Transcribe and Cleaner on the Mac.",
+      "27 expressions, rubber-hose arms, sounds made in Vital, and 13 style templates."
+    ]
+  }
+]
