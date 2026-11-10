@@ -225,6 +225,7 @@ h2 {
 .install-card li { margin-bottom: 0.55rem; }
 .install-card li::marker { font-family: var(--mono); color: var(--eye); }
 .note { margin: 1rem 0 0; font-size: 0.9rem; color: var(--muted); }
+.beta { display: inline-block; vertical-align: middle; margin-left: 0.4rem; padding: 0.1rem 0.55rem; border: 1px solid rgba(250, 153, 107, 0.55); border-radius: 999px; color: var(--peach); font: 600 0.75rem/1.4 var(--body); letter-spacing: 0.04em; text-transform: uppercase; }
 
 .changelog { display: grid; gap: 22px; }
 .release { display: grid; grid-template-columns: 7.5rem 1fr; gap: 18px; }

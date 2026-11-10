@@ -1,5 +1,19 @@
 [
   {
+    "version": "1.2.0",
+    "notes": [
+      "Talk instead of typing: dictate into the chat, or use voice mode, where Dyna listens, answers out loud and listens again. Speech is recognized on your device.",
+      "A writing check everywhere, powered by Harper and run on your device: after you pause typing, Dyna reads along with a magnifying glass, jots notes when it finds something, and a badge by the island opens the fixes. Click a fix and it's typed into your text, in web apps like Mail, Safari and Chrome too; if an app won't take it, Dyna says so. Notes gets underlines too.",
+      "Memory in the style of Mnemosyne: each message recalls the memories that fit it, the AI updates or forgets old ones instead of piling up duplicates, and the memory tidies itself while Dyna naps.",
+      "New games: shake the cursor and Dyna gets dizzy (then holds it still); leave for a while and Dyna may go fishing with your cursor, so you have to pull hard to get it back.",
+      "Four new eye shapes: Sparkle, Cat, Lens and Button.",
+      "New sounds for fishing, dizziness, writing, the microphone, and a little babble when Dyna talks.",
+      "Fixed: today's note kept showing an earlier day's note.",
+      "If macOS shows Accessibility as on but DynaBuddy can't use it (a switch left over from an older build), DynaBuddy now says so and shows how to reset it.",
+      "Windows is in beta and still being worked on: expect rough edges. It gets the new eyes, the dizzy shake and the today's-note fix; voice, the writing check, the new memory and fishing are on the Mac first."
+    ]
+  },
+  {
     "version": "1.0.0",
     "notes": [
       "DynaBuddy for Windows 10 and 11: the island, the face and rubber-hose arms, all 13 looks, Files, Notes, Chat, Music and Capture. Clipper, Transcribe and Cleaner come to Windows next.",

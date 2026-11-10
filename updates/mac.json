@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
-  "build": 10,
-  "url": "https://github.com/dynabuddy/dynabuddy.github.io/releases/download/v1.0.0/DynaBuddy-1.0.0-mac.zip",
-  "size": 9874135,
-  "sha256": "3cd8473ad9244574c7586ce982caba12adee9a18d46678977e759ef53a375180",
-  "signature": "MEUCIQCevzCF3xwL4qjMzDkoj4kPh7lA6ZKYJxGOgAcsKxUD7gIgJv8eznJ93lX52yo8gyG/Ucl3BdbMrAbiMVA6u85LbgE=",
+  "version": "1.2.0",
+  "build": 12,
+  "url": "https://github.com/dynabuddy/dynabuddy.github.io/releases/download/v1.2.0/DynaBuddy-1.2.0-mac.zip",
+  "size": 19454016,
+  "sha256": "910cfddf7c432b58ea4374e1ccacedfba677bfda359eb4bceaa0f7362b22c677",
+  "signature": "MEUCIQDtZ4pZCNX+AF9Mtu5hAAANlf0H6pUbbbAmHyrrC8iMzwIgdo/I89TioHyVj9XJMechZLnWj3rNiE8qP7Zi0HLs0QI=",
   "minimumSystem": "26.0",
-  "notes": "\u2022 DynaBuddy for Windows 10 and 11: the island, the face and rubber-hose arms, all 13 looks, Files, Notes, Chat, Music and Capture. Clipper, Transcribe and Cleaner come to Windows next.\n\u2022 A first-run setup on both: meet your buddy, connect the AI you already use, pick a look, and choose folders.\n\u2022 Automatic updates from dynabuddy.github.io; Mac updates are checked against DynaBuddy's own signing key before they install.\n\u2022 Installers: a disk image for Mac and Setup.exe for Windows.",
-  "date": "2026-11-09",
-  "page": "https://dynabuddy.github.io/#v1.0.0"
+  "notes": "\u2022 Talk instead of typing: dictate into the chat, or use voice mode, where Dyna listens, answers out loud and listens again. Speech is recognized on your device.\n\u2022 A writing check everywhere, powered by Harper and run on your device: after you pause typing, Dyna reads along with a magnifying glass, jots notes when it finds something, and a badge by the island opens the fixes. Click a fix and it's typed into your text, in web apps like Mail, Safari and Chrome too; if an app won't take it, Dyna says so. Notes gets underlines too.\n\u2022 Memory in the style of Mnemosyne: each message recalls the memories that fit it, the AI updates or forgets old ones instead of piling up duplicates, and the memory tidies itself while Dyna naps.\n\u2022 New games: shake the cursor and Dyna gets dizzy (then holds it still); leave for a while and Dyna may go fishing with your cursor, so you have to pull hard to get it back.\n\u2022 Four new eye shapes: Sparkle, Cat, Lens and Button.\n\u2022 New sounds for fishing, dizziness, writing, the microphone, and a little babble when Dyna talks.\n\u2022 Fixed: today's note kept showing an earlier day's note.\n\u2022 If macOS shows Accessibility as on but DynaBuddy can't use it (a switch left over from an older build), DynaBuddy now says so and shows how to reset it.\n\u2022 Windows is in beta and still being worked on: expect rough edges. It gets the new eyes, the dizzy shake and the today's-note fix; voice, the writing check, the new memory and fishing are on the Mac first.",
+  "date": "2026-11-11",
+  "page": "https://dynabuddy.github.io/#v1.2.0"
 }

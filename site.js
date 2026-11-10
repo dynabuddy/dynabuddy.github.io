@@ -5,7 +5,7 @@
   const isMac = /Macintosh|Mac OS X/i.test(ua) && !/iPhone|iPad/i.test(ua);
   const base = "https://github.com/dynabuddy/dynabuddy.github.io/releases/latest/download/";
   const mac = { title: "Download for Mac", note: "macOS 26 or later", href: base + "DynaBuddy-mac.dmg" };
-  const win = { title: "Download for Windows", note: "Windows 10 or 11 · 64-bit", href: base + "DynaBuddy-win-Setup.exe" };
+  const win = { title: "Download for Windows (beta)", note: "Beta · Windows 10 or 11 · 64-bit", href: base + "DynaBuddy-win-Setup.exe" };
   const [first, second] = isWindows ? [win, mac] : [mac, win];
   const set = (id, d) => {
     document.getElementById(id).href = d.href;
