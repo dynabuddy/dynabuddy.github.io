@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security Measures · DynaBuddy</title>
+  <meta name="description" content="How DynaBuddy keeps your data and your updates safe, what it can't promise, and how to report a problem.">
+  <meta name="theme-color" content="#16132e">
+  <link rel="icon" href="img/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="doc-page">
+  <header class="doc-bar">
+    <a class="doc-home" href="./" aria-label="DynaBuddy home">
+      <img src="img/icon.png" alt="" width="32" height="32">
+      <span>DynaBuddy</span>
+    </a>
+    <nav class="doc-switch" aria-label="Legal pages">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="security.html" aria-current="page">Security</a>
+    </nav>
+  </header>
+
+  <main class="doc">
+    <p class="kicker">Security Measures</p>
+    <h1>Safe by keeping less.</h1>
+    <p class="doc-meta">Last updated November 13, 2026</p>
+
+    <div class="doc-summary">
+      <p><b>The short version.</b> The safest data is data nobody else holds. DynaBuddy keeps your things on your computer, has no server and no account to break into, and checks its Mac updates before installing them. Here is what that means, and what it doesn't cover.</p>
+    </div>
+
+    <div class="doc-block">
+      <h2>Your data stays with you</h2>
+      <ul>
+        <li>Notes, files, chat history, memories and settings are stored locally on your computer.</li>
+        <li>API keys you add are stored locally. They are used only to talk to the providers you chose, and never sent to DynaBuddy.</li>
+        <li>There is no DynaBuddy account or server, so there's no central store of user data to leak.</li>
+        <li>No analytics and no crash reporting. Nothing is collected beyond the daily update check.</li>
+        <li>Speech recognition, the writing check and transcription run on your device.</li>
+      </ul>
+    </div>
+
+    <div class="doc-block">
+      <h2>Updates you can trust</h2>
+      <ul>
+        <li>Installed copies check this site once a day and download updates from the official GitHub Releases page.</li>
+        <li>On Mac, every update is listed with its SHA-256 checksum and a signature, and is checked against DynaBuddy's own signing key before it installs. An update that fails the check is not installed.</li>
+        <li>The signing-key check described here applies to Mac updates. Windows is in beta and updates from the same release page.</li>
+      </ul>
+    </div>
+
+    <div class="doc-block">
+      <h2>Installing safely</h2>
+      <p>DynaBuddy is free and is made without paid developer certificates, so macOS and Windows warn you the first time you open it. That warning is expected. To stay safe, get DynaBuddy only from the download buttons on <span class="mono">dynabuddy.github.io</span> or the official <a href="https://github.com/dynabuddy/dynabuddy.github.io/releases" target="_blank" rel="noopener">releases page</a>. GitHub shows a SHA-256 checksum next to each file there, so you can compare it with your download.</p>
+    </div>
+
+    <div class="doc-block">
+      <h2>Permissions, used narrowly</h2>
+      <p>DynaBuddy may ask for permissions such as Accessibility, microphone, screen recording and folder access. It uses each one only for the tool you're using. You can turn any of them off in your system settings at any time, and the matching tool will stop working until you turn it back on.</p>
+    </div>
+
+    <div class="doc-block">
+      <h2>What we can't promise</h2>
+      <ul>
+        <li>Anything you send to an AI provider is handled under that provider's rules and security, not ours.</li>
+        <li>Your computer's own security matters. Anyone with access to your account or device can reach what DynaBuddy stores there, so keep your system updated and protected.</li>
+        <li>No software is perfect. DynaBuddy is provided as-is, as described in the <a href="terms.html">Terms</a>.</li>
+      </ul>
+    </div>
+
+    <div class="doc-block">
+      <h2>Found a problem?</h2>
+      <p>Please tell the developer through the <a href="https://www.threads.com/@chavacano_dev?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Threads profile</a>. Say what you found and how to repeat it, and please don't post the details publicly until it's fixed. Fixes ship as updates.</p>
+    </div>
+
+    <nav class="doc-more" aria-label="More">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="./">Back to DynaBuddy</a>
+    </nav>
+  </main>
+
+  <footer>
+    <nav class="legal-links" aria-label="Legal">
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="security.html">Security</a>
+    </nav>
+    <p class="fine">developed by <a href="https://www.threads.com/@chavacano_dev?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">Chavacano Dev</a></p>
+  </footer>
+</body>
+</html>
