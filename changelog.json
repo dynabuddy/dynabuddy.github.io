@@ -1,5 +1,25 @@
 [
   {
+    "version": "1.3.0",
+    "notes": [
+      "Dyna can now do things for you, not just talk: read and change your files and notes, run commands, search the web and read pages, and work other apps through their buttons, menus and fields. In Settings \u2192 AI \u2192 What Dyna may do, you set each kind of action to Off, Ask first or Allow. Risky commands, changes to your own notes and anything that would send, delete or pay always ask first, and passwords, keys and browser data are never read.",
+      "Connectors: link Dyna to services through MCP, such as Notion, Linear, GitHub, Google and Microsoft 365, with a sign-in in your browser. The keys stay in your Keychain.",
+      "Skills: teach Dyna a way of doing something, or find and install skills from skills.sh. A skill from outside waits for your OK before it's used.",
+      "Say \"Hey Dyna\" to start talking without a click (off by default; it uses the built-in mic, pauses when another app is recording, and can skip on battery).",
+      "Online voices: Dyna can answer in an OpenAI, Gemini or ElevenLabs voice and falls back to the Mac's voice if one fails.",
+      "Writing check: add words to your own dictionary, turn off rules you don't want, spelling for text that isn't English, and AI rewrites of a selection (Proofread, Shorter, Friendlier, More formal, or your own words) with a before and after.",
+      "New looks: six eye shapes (heart, star, moon, bead, visor, flower), six materials (wood, denim, marble, chrome, candy, aurora) and seven expressions (proud, determined, relieved, bored, amazed, mischievous, cozy), on Mac and Windows.",
+      "A shortcut for the chat (\u2303\u2325Space), quiet time, and saving and loading your settings as a file.",
+      "Better fit on every screen: pick notch, camera cutout or no notch, and on a notch you can put Dyna below it or beside it.",
+      "Watch (beta, off by default): Dyna can react to your notifications and tell you when something new is set to start at login.",
+      "Web tools never reach your own Mac or your local network, however the address is written.",
+      "Windows gets closer to the Mac: the open island looks the same, with a see-through panel and no frame, sounds and props, and fishing for the cursor.",
+      "Clipper comes to Windows: paste a link, or copy one and press Paste & clip, and the page is saved as a clean note in Clippings, laid out like Obsidian Web Clipper. YouTube links keep the title, channel and chapters. Windows reads pages with their own scripts off, so a site that needs JavaScript to show anything may come out empty, and YouTube transcripts are on the Mac only for now.",
+      "Transcribe comes to Windows for audio and video files: whisper.cpp runs on your PC (DynaBuddy can download it and a speech model for you), each transcript is saved as a note, and you can copy it or save it as text, SRT or VTT. Live captions are on the Mac only for now.",
+      "Cleaner comes to Windows: it finds temporary files, browser caches and old downloads, lets you pick them by kind or one by one, and moves them to the Recycle Bin after you confirm. It also takes tracking out of the link on the clipboard, or out of every link you copy. Desktop tidy, app removal and cleaning mode stay on the Mac."
+    ]
+  },
+  {
     "version": "1.2.0",
     "notes": [
       "Talk instead of typing: dictate into the chat, or use voice mode, where Dyna listens, answers out loud and listens again. Speech is recognized on your device.",
