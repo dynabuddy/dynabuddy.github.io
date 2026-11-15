@@ -28,7 +28,7 @@
   <main class="doc">
     <p class="kicker">Security Measures</p>
     <h1>Safe by keeping less.</h1>
-    <p class="doc-meta">Last updated November 13, 2026</p>
+    <p class="doc-meta">Last updated November 15, 2026</p>
 
     <div class="doc-summary">
       <p><b>The short version.</b> The safest data is data nobody else holds. DynaBuddy keeps your things on your computer, has no server and no account to break into, and checks its Mac updates before installing them. Here is what that means, and what it doesn't cover.</p>
@@ -38,7 +38,7 @@
       <h2>Your data stays with you</h2>
       <ul>
         <li>Notes, files, chat history, memories and settings are stored locally on your computer.</li>
-        <li>API keys you add are stored locally. They are used only to talk to the providers you chose, and never sent to DynaBuddy.</li>
+        <li>API keys you add, and the sign-ins for services you connect, are stored locally (on a Mac, in the Keychain). They are used only to talk to the providers and services you chose, and never sent to DynaBuddy.</li>
         <li>There is no DynaBuddy account or server, so there's no central store of user data to leak.</li>
         <li>No analytics and no crash reporting. Nothing is collected beyond the daily update check.</li>
         <li>Speech recognition, the writing check and transcription run on your device.</li>
@@ -57,6 +57,18 @@
     <div class="doc-block">
       <h2>Installing safely</h2>
       <p>DynaBuddy is free and is made without paid developer certificates, so macOS and Windows warn you the first time you open it. That warning is expected. To stay safe, get DynaBuddy only from the download buttons on <span class="mono">dynabuddy.github.io</span> or the official <a href="https://github.com/dynabuddy/dynabuddy.github.io/releases" target="_blank" rel="noopener">releases page</a>. GitHub shows a SHA-256 checksum next to each file there, so you can compare it with your download.</p>
+    </div>
+
+    <div class="doc-block">
+      <h2>When Dyna acts for you</h2>
+      <ul>
+        <li>You set each kind of action (reading files, changing files, running commands, the web, the screen, other apps, connected services) to Off, Ask first or Allow.</li>
+        <li>Risky commands, changes to your own notes, and anything that would send, delete or pay always ask first, even when that kind of action is set to Allow.</li>
+        <li>Dyna refuses to read secrets such as SSH keys, keychains and browser data, and refuses to change what starts at login or your shell settings.</li>
+        <li>Web tools won't open addresses on your own computer or your local network, however the address is written.</li>
+        <li>Installing a skill from outside always asks first. It's checked for risky instructions, and one with warnings waits for your OK before Dyna uses it.</li>
+        <li>Dyna never controls password managers, the keychain, terminals or system settings, and never reads password fields.</li>
+      </ul>
     </div>
 
     <div class="doc-block">

@@ -28,7 +28,7 @@
   <main class="doc">
     <p class="kicker">Privacy Policy</p>
     <h1>Your stuff stays on your computer.</h1>
-    <p class="doc-meta">Last updated November 13, 2026</p>
+    <p class="doc-meta">Last updated November 15, 2026</p>
 
     <div class="doc-summary">
       <p><b>The short version.</b> DynaBuddy has no account, no DynaBuddy server, no analytics, no crash reports and no ads. We don't collect your personal information. The few things that leave your computer are listed below, and you choose most of them.</p>
@@ -36,8 +36,10 @@
 
     <div class="doc-block">
       <h2>What stays on your computer</h2>
-      <p>Your notes, files, chat history, memories, settings and any API keys you add are stored locally on your computer. They are never sent to DynaBuddy, because there is no DynaBuddy server to send them to.</p>
+      <p>Your notes, files, chat history, memories, skills, settings, any API keys you add and the sign-ins for services you connect are stored locally on your computer (on a Mac, keys and sign-ins are kept in the Keychain). They are never sent to DynaBuddy, because there is no DynaBuddy server to send them to.</p>
       <p>Speech recognition, the writing check (powered by Harper) and transcription run on your device.</p>
+      <p>When "Hey Dyna" is on, the built-in microphone listens for Dyna's name on your device. Nothing is saved or sent while it listens; only what you say to Dyna after its name goes to your AI provider, as a chat message.</p>
+      <p>Watch, if you turn it on, reads your notification banners and checks what is set to start at login on your computer. What it sees stays there.</p>
     </div>
 
     <div class="doc-block">
@@ -45,14 +47,20 @@
       <h3>The daily update check</h3>
       <p>Once a day, an installed copy asks <span class="mono">dynabuddy.github.io</span> whether a new version exists and downloads updates from GitHub Releases. That is the only thing DynaBuddy does on the internet on its own. The site and downloads are hosted by GitHub, which may log technical details such as your IP address and the time of the request, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's privacy statement</a>. We don't receive those logs.</p>
       <h3>Your AI providers</h3>
-      <p>When you use Chat, what you type, and any notes or files you choose to include, goes to the AI app or provider you connected (such as Claude Code, Codex, Gemini, OpenCode, or an API key of your own). They handle it under their own terms and privacy policies, not ours. If you run models on your own computer, for example with Ollama, that data stays on your computer.</p>
+      <p>When you use Chat, what you type or say, and any notes or files you choose to include, goes to the AI app or provider you connected (such as Claude Code, Codex, Gemini, OpenCode, or an API key of your own). So does anything Dyna reads for you with its tools, such as a file, the screen, another app's window, a web page or a connected service's answer, and any text you ask the writing check to rewrite. They handle it under their own terms and privacy policies, not ours. If you run models on your own computer, for example with Ollama, that data stays on your computer.</p>
+      <h3>When Dyna does things for you</h3>
+      <p>You choose in Settings what Dyna may do, and risky steps always ask first. When Dyna searches the web, your search words go to DuckDuckGo; when it reads a page, it fetches that page from its site. It won't open addresses on your own computer or your local network.</p>
+      <p>Connectors link Dyna to services you choose, such as Notion, Linear, GitHub, Google or Microsoft 365. You sign in on the service's own page in your browser, or paste a key it gives you, and whatever Dyna sends to a connected service, or asks it for, is handled by that service under its own terms.</p>
+      <p>Looking for new skills sends your search words to skills.sh, and installing one downloads it from GitHub.</p>
+      <h3>Online voices</h3>
+      <p>If you pick an online voice, the text of Dyna's replies goes to OpenAI, Google (Gemini) or ElevenLabs to be spoken aloud, under their terms. Your computer's own voice works without sending anything.</p>
       <h3>Tools you point at the internet</h3>
       <p>Some tools contact the sites you aim them at. For example, the Clipper fetches the page or video you ask it to save.</p>
     </div>
 
     <div class="doc-block">
       <h2>Permissions</h2>
-      <p>To work, DynaBuddy may ask your computer for permissions such as Accessibility, microphone, screen recording, and access to folders you choose. It uses each one only to run the tool you are using, and you can switch any of them off in your system settings at any time.</p>
+      <p>To work, DynaBuddy may ask your computer for permissions such as Accessibility, microphone, screen recording, and access to folders you choose. It uses each one only to run the tool you are using, and you can switch any of them off in your system settings at any time. If you let Dyna control apps, it uses Accessibility to read and press things in their windows; it names password fields but never reads them, and it never controls password managers, the keychain, terminals or system settings.</p>
     </div>
 
     <div class="doc-block">
