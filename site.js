@@ -46,4 +46,22 @@
       }
     })
     .catch(() => {});
+  const OPT_OUT_KEY = "dynabuddy-skip-download-count";
+  const params = new URLSearchParams(location.search);
+  try {
+    if (params.get("notrack") === "1") localStorage.setItem(OPT_OUT_KEY, "1");
+    if (params.get("notrack") === "0") localStorage.removeItem(OPT_OUT_KEY);
+  } catch {}
+
+  const countDownload = (platform) => {
+    try {
+      if (localStorage.getItem(OPT_OUT_KEY) === "1") return;
+    } catch {}
+    window.goatcounter?.count({ path: "download-" + platform, title: "Download " + platform, event: true });
+  };
+  for (const id of ["dl-primary", "dl-secondary"]) {
+    document.getElementById(id).addEventListener("click", (event) => {
+      countDownload(event.currentTarget.href.includes("-mac.dmg") ? "mac" : "windows");
+    });
+  }
 })();
